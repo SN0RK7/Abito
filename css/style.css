@@ -1,0 +1,75 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #0A143A;
+}
+.header{
+    max-width: 1146px;
+    margin: auto; /* Автомат. выравнивание по середине */
+    padding-top: 30px;
+}
+.navbar{
+    display: flex; /*Гибкий блок */
+    align-items: center; /* Выравниваем по вертикали по центру*/
+    justify-content: space-between; /*Разбровасть элементы по краям */
+    margin-bottom: 24px;
+}
+.navbar-menu{ 
+    margin-right: auto; /*Автоматическйи отступа справа */
+}   
+.menu{
+    list-style: none;
+    margin: 0;
+    padding-right: 22px;
+    padding-left: 22px;
+    display: flex;
+}
+.menu-item:not(:last-child) {
+    margin-right: 14px;
+}
+.menu-link{
+    text-decoration: none;
+    color: inherit; /*Берет цвет родителя(body) */
+}
+.button{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.button-link{
+    color: inherit;
+}
+.button-primary{
+    background: #256EEB;
+    border-radius: 5px;
+    color: white;
+}
+.search-panel{
+    height: 50px;
+    background: #256EEB;
+    border-radius: 5px;
+    display: flex;
+    padding: 3px;
+}
+.search-input{
+    flex-grow: 1;/*Растягивается на всё свободное место */
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: none;/*Отключаем обводку */
+    padding-left: 22px;
+    padding-right: 22px;
+}
+.button-search{
+    background: #256EEB;
+    border: none;/*Отключаем обводку */
+    color:white;
+    padding-left: 20px;
+    padding-right: 17px;
+    display: flex;
+    align-items: center;
+
+}
+.search-text{
+    margin-left: 5px;
+}
