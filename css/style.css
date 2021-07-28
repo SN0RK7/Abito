@@ -3,10 +3,14 @@ body{
     font-size: 14px;
     color: #0A143A;
 }
-.header{
+.container{
     max-width: 1146px;
     margin: auto; /* Автомат. выравнивание по середине */
+}
+.header{
+    padding-bottom: 30px;
     padding-top: 30px;
+    margin-bottom: 12px;
 }
 .navbar{
     display: flex; /*Гибкий блок */
@@ -72,4 +76,100 @@ body{
 }
 .search-text{
     margin-left: 5px;
+}
+.page-content {
+    display: grid;
+    grid-template-columns: 9fr 3fr; /*Распределение колонок для каждой области */
+    grid-column-gap: 30px; /*Расстояние между областями(воздух) */
+}
+.card-img{
+    border-radius: 10px;
+    width: 264px;
+    height: 178px;
+    object-fit: cover; /*Измнется если не подоёдет под параматеры*/
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    margin-bottom: 20px; 
+    max-width: 264px;
+}
+/*Отсутп у всех кроме каждой 3-ей*/
+.card:not(:nth-child(3n)){
+    margin-right: 20px;
+}
+.card-title{
+    font-size: 16px;
+    line-height: 19px;
+    color: #256EEB;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.like{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;
+}
+.card-link {
+    text-decoration: none;
+}
+.card-price{
+    font-size: 16px;
+    line-height: 19px;
+    color: #0A143A;
+    margin-bottom: 10px;
+    display: block;
+}
+.card-text{
+    font-size: 14px;
+    line-height: 16px;
+    color: #C4C4C4;
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+.sidebar .page-title{
+    font-size: 18px;
+    line-height: 21px;
+}
+.service{
+    margin-bottom: 25px;
+}
+.service-title{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 7px;
+    margin-bottom: 5px;
+}
+.service-text{
+    font-size: 14px;
+line-height: 16px; 
+max-width: 217px; 
+}
+.footer-text{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 16px;
+    color: #C4C4C4;
+    margin-bottom: 5px;
+}
+.footer-menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 16px;
+}
+.footer-link{
+    color:inherit;
+    text-decoration:none;
+    display: inline-block;
+    margin-bottom: 5px;
 }
