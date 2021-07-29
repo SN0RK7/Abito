@@ -11,3 +11,17 @@ var swiper = new Swiper(".mySwiper", {
       swiper: swiper,
     },
   });
+
+  const menuBtn = document.querySelector(".menu-button");
+  const menu = document.querySelector(".navbar-panel");
+  const menuClose = document.querySelector(".close-menu");
+
+  //Активация бургера
+  menuBtn.addEventListener("click", () =>{
+    menu.classList.toggle('is-open'); 
+  });
+
+  menuClose.addEventListener("click",()  => {
+    menu.classList.toggle('is-open'); 
+  })
+
